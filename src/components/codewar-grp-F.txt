@@ -1,0 +1,14 @@
+function func(...args) {
+    for (item of args) {
+      console.log(item);
+    }
+  }
+  
+  function spread(all, array) {
+    all(...array);
+    return array;
+  }
+  
+  spread(func, [1, true, "Foo", "bar"]);
+  
+  
